@@ -1,0 +1,14 @@
+{
+  "name": "mono-repo-peer-test",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "dependencies": {
+    "@yarnpkg/pnpify": "^2.0.0-rc.20",
+    "eslint": "^6.8.0",
+    "typescript": "^3.8.3",
+    "workspace": "^0.0.1-preview.1"
+  }
+}

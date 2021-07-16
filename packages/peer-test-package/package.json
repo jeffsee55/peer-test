@@ -1,0 +1,24 @@
+{
+  "name": "peer-test-pkg",
+  "version": "0.3.0",
+  "main": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
+  "typings": "dist/index.d.ts",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "yarn tsup src/index.tsx --format cjs --dts",
+    "watch": "yarn tsup src/index.tsx --watch --format cjs --dts"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.14",
+    "react": "^17.0.2",
+    "tsup": "^3.7.0",
+    "typescript": "^3.9.5"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "styled-components": "^5.3.0"
+  }
+}
